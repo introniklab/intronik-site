@@ -7,6 +7,9 @@
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "keywords": [],
   "author": "Sergey Milchakov",
   "license": "ISC",

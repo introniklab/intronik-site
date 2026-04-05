@@ -1,8 +1,6 @@
-module.exports = function(eleventyConfig) {
-  // Копируем папку со стилями в готовый сайт
+export default function(eleventyConfig) {
+  // Копируем папки со стилями и изображениями
   eleventyConfig.addPassthroughCopy("src/css");
-
-  // Добавляем копирование папки с изображениями
   eleventyConfig.addPassthroughCopy("src/images");
 
   return {
