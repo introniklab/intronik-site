@@ -9,7 +9,7 @@ title: Контакты
 
 - **Email:** [introniklab@mail.ru](mailto:introniklab@mail.ru)
 - **Telegram:** [@intronik11](https://t.me/intronik11)
-- **Телефон:** [+7 (xxx) xxx-xx-xx](tel:+7xxxxxxxxxx) 
+- **Сообщество в Vk:** [vk.com/introniklab/](https://vk.com/introniklab/) 
 
 ---
 
