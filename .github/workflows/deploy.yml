@@ -2,7 +2,7 @@ name: Deploy to Beget
 on:
   push:
     branches:
-      - main  # так называется ваша главная ветка в GitHub
+      - main
 
 jobs:
   deploy:
