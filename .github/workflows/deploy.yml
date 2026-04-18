@@ -1,0 +1,21 @@
+name: Deploy to Beget
+on:
+  push:
+    branches:
+      - основной  # так называется ваша главная ветка в GitHub
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/intronik-site
+            git pull origin основной
+            npm install
+            npm run build
