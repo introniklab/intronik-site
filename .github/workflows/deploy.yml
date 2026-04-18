@@ -2,7 +2,7 @@ name: Deploy to Beget
 on:
   push:
     branches:
-      - основной  # так называется ваша главная ветка в GitHub
+      - main  # так называется ваша главная ветка в GitHub
 
 jobs:
   deploy:
@@ -16,6 +16,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/intronik-site
-            git pull origin основной
+            git pull origin main
             npm install
             npm run build
